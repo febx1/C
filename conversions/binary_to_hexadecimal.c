@@ -5,17 +5,16 @@
 
 int main()
 {
-    long int binary, hexa = 0, i = 1, remainder;
-
-    printf("Enter the binary number: ");
-    scanf("%ld", &binary);
-    while (binary != 0)
+    long int binary, hexa = 0, i = 1, remainder;//initializing variable
+    printf("Enter the binary number: ");   //output
+    scanf("%ld", &binary);    // taking input
+    while (binary != 0)     //while loop
     {
         remainder = binary % 10;
         hexa = hexa + remainder * i;
         i = i * 2;
         binary = binary / 10;
-    }
-    printf("THe Equivalent hexadecimal value: %lX", hexa);
+    }                      // end while loop
+    printf("THe Equivalent hexadecimal value: %lX", hexa);   // final output
     return 0;
 }
